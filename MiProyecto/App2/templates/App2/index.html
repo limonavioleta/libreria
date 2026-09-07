@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Chimuelo - Sistema Lumina</title>
+
+  <!-- Fuente Atkinson Hyperlegible -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'App2/css/style.css' %}">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header class="site-header">
+    <a href="#" class="logo">LIBRERÍA CHIMUELO</a>
+    <nav class="site-nav">
+      <a href="#catalogo" class="nav-link">CATÁLOGO</a>
+      <a href="#buscar" class="nav-link">BUSCAR</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <span class="chip chip-yellow">ALTO CONTRASTE</span>
+      <h1 class="headline-xl">ACCESIBILIDAD Y LECTURA SIN LÍMITES</h1>
+      <p class="body-lg">
+        Diseñado bajo el sistema de diseño Lumina. Estructura clara, bordes marcados y máxima visibilidad para una lectura sin barreras.
+      </p>
+      <div class="cta-group">
+        <button class="btn btn-primary">EXPLORAR CATÁLOGO</button>
+        <button class="btn btn-secondary">MÁS INFORMACIÓN</button>
+      </div>
+    </section>
+
+    <!-- Sección Reproductor / Audiolibro -->
+    <section id="catalogo" class="content-section">
+      <h2 class="headline-lg">Audiolibro Destacado</h2>
+      <div class="card">
+        <span class="chip chip-white">REPRODUCTOR ACCESIBLE</span>
+        <p class="body-xl mt-16">Capítulo 1: Introducción a Django</p>
+
+        <div class="audio-controls">
+          <button class="btn btn-primary btn-large">► REPRODUCIR</button>
+          <button class="btn btn-secondary btn-large">◄ 10s</button>
+          <button class="btn btn-secondary btn-large">10s ►</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Formulario -->
+    <section id="buscar" class="content-section">
+      <h2 class="headline-lg">Búsqueda en el Catálogo</h2>
+      <form class="form-container" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label for="search-input" class="label-lg">INGRESAR TÍTULO O AUTOR</label>
+          <input type="text" id="search-input" class="input-field" placeholder="Ej. Python, El Principito...">
+        </div>
+        <button type="submit" class="btn btn-primary">BUSCAR AHORA</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <p class="body-lg">© 2026 Librería Chimuelo. Sistema de Alto Contraste Lumina.</p>
+  </footer>
+
+</body>
+</html>
