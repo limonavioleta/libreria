@@ -25,7 +25,7 @@
         <a href="#braille">Braile</a>
         <a href="#talleres">Talleres</a>
         <a href="#informatica">Informática</a>
-        <a href="#buscar" class="icon-link" aria-label="Buscar">⌕</a>
+        <a href="#buscar" class="search-button" aria-label="Buscar">⌕</a>
         <a href="#accesibilidad" class="access-link">Accesibilidad</a>
       </nav>
     </header>
@@ -37,16 +37,16 @@
         <div class="hero-copy">
           <h1 id="hero-title">ACCESO TOTAL A LA<br>CULTURA</h1>
           <p>
-            Una biblioteca diseñada sin barreras. Descubre nuestro vasto catálogo
-            de recursos accesibles, desde audiolibros hasta textos en braille,
-            en un entorno pensado para todos.
+            Una biblioteca diseñada sin barreras. Descubre nuestro vasto catálogo de
+            recursos accesibles, desde audiolibros hasta textos en braille, en un
+            entorno pensado para todos.
           </p>
           <a class="primary-btn" href="#servicios">Explorar Catálogo</a>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
           <div class="visual-frame">
-            <div class="visual-mark">▰〰</div>
+            <div class="visual-mark"><span>▤</span><i>〰</i></div>
           </div>
         </div>
       </section>
@@ -59,31 +59,31 @@
 
         <div class="services-grid">
           <article id="prestamos" class="service-card">
-            <div class="service-icon">▤</div>
+            <div class="service-icon" aria-hidden="true">▤</div>
             <h3>Préstamos</h3>
             <p>Libros en macrotaracteres y formatos adaptados para baja visión.</p>
           </article>
 
           <article id="audio" class="service-card">
-            <div class="service-icon">◉</div>
+            <div class="service-icon" aria-hidden="true">◉</div>
             <h3>Audio</h3>
             <p>Extensa colección de audiolibros con reproductores accesibles.</p>
           </article>
 
           <article id="braille" class="service-card">
-            <div class="service-icon">♧</div>
+            <div class="service-icon" aria-hidden="true">♧</div>
             <h3>Braile</h3>
             <p>Literatura, revistas y documentos impresos en sistema braille.</p>
           </article>
 
           <article id="talleres" class="service-card">
-            <div class="service-icon">♟</div>
+            <div class="service-icon" aria-hidden="true">♟</div>
             <h3>Talleres</h3>
             <p>Actividades formativas y culturales diseñadas inclusivamente.</p>
           </article>
 
           <article id="informatica" class="service-card">
-            <div class="service-icon">▰</div>
+            <div class="service-icon" aria-hidden="true">▰</div>
             <h3>Informática</h3>
             <p>Puestos con lectores de pantalla y magnificadores instalados.</p>
           </article>
@@ -104,10 +104,12 @@
         </form>
       </section>
 
-      <section id="accesibilidad" class="accessibility-note">
+      <section id="accesibilidad" class="accessibility-note" aria-label="Información de accesibilidad">
         <strong>ACCESIBILIDAD</strong>
         <p>Interfaz de alto contraste, navegación por teclado y tipografía optimizada para lectura.</p>
       </section>
+
+      <span id="ayudante" class="anchor-target" aria-hidden="true"></span>
     </main>
 
     <footer class="site-footer">
